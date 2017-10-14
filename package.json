@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/jpratt9/AlexaQuizlet#readme",
   "dependencies": {
-    "client-oauth2": "^4.1.0",
     "request": "^2.83.0"
   }
 }
