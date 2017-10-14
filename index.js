@@ -13,7 +13,6 @@ let client_id = 'YEkMtWaFXg';
 let secret = process.env.QUIZLET_SECRET;
 module.exports = {};
 
-
 exports.getSet = function (setId) {
     request(quizlet + `sets/415?client_id=${client_id}&whitespace=
     ${config.whitespace}`, options, function (error, response, body) {
@@ -33,8 +32,8 @@ exports.search = function (query) {
         } else {
             return error;
         }
-    })
+        console.log(definition)
+      })
 }
-
 //getSet(415);
 
