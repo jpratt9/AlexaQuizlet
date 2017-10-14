@@ -1,7 +1,7 @@
 let client_id = 'YEkMtWaFXg';
 let secret = process.env.QUIZLET_SECRET;
 let quizlet = 'https://api.quizlet.com/2.0/'
-let url = 'https://google.com';
+let url = 'http://example.com';
 let request = require('request');
 let options = {
     json: true

@@ -1,5 +1,5 @@
 # AlexaQuizlet
-Alexa skills for using Quizlet in Python.
+Alexa skills for using Quizlet in NodeJS.
 
 # Development
 * Clone the repo
