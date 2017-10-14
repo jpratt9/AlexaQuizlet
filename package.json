@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jpratt9/AlexaQuizlet/issues"
   },
-  "homepage": "https://github.com/jpratt9/AlexaQuizlet#readme"
+  "homepage": "https://github.com/jpratt9/AlexaQuizlet#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }
