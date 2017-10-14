@@ -7,12 +7,17 @@ let options = {
     json: true
 }
 
-
 function getSet(setId) {
     request(quizlet + `sets/415?client_id=${client_id}&whitespace=1`, options, function (error, response, body) {
+        let term = [];
+        let definition = []
         if (!error && response.statusCode == 200) {
-          console.log(body.terms[1])
+        	for(let i = 0; i < body.terms.length; i++){
+        		term.push(body.terms[i].term)
+        		definition.push(body.terms[i].definition)
+            }
         }
+        console.log(definition)
       })
 }
 
@@ -23,6 +28,4 @@ function getSet(setId) {
 //         }
 //       })
 // }
-
-getSet(415);
-
+getSet(415)
