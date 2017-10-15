@@ -1,8 +1,22 @@
-var Alexa = require('alexa-sdk');
+let quizlet = 'https://api.quizlet.com/2.0/'
+let url = 'http://example.com';
+let request = require('request');
+let options = {
+    json: true
+}
+let config = {
+    whitespace: 1,
+    page: 1,
+    per_page: 10
+}
+let client_id = 'YEkMtWaFXg';
+let secret = process.env.QUIZLET_SECRET;
+
+let Alexa = require('alexa-sdk');
 
 const APP_ID= 'amzn1.ask.skill.6fefa6be-05ed-4ea4-92cd-a963d9ed3e1c';
 
-var data = [
+let data = [
 {
   question: 'question1',
   answer: 'answer1'
